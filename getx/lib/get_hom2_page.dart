@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx/get_home_pager.dart';
 import 'package:getx/getx_artan.dart';
+
+import 'get_home3_page.dart';
 
 class GetHomePage2 extends StatefulWidget {
   const GetHomePage2({super.key});
@@ -23,12 +24,12 @@ class _GetHomePage2State extends State<GetHomePage2> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  getxArtan.sayac.value++;
+                  // getxArtan.sayac.value++;
                 },
                 child: const Text("Artir ")),
             ElevatedButton(
                 onPressed: () {
-                  Get.to(const GetHomePage());
+                  Get.to(const GetHomePage3());
                 },
                 child: const Text("sonraki sehife ")),
             Obx(() => Text("sayi${getxArtan.sayac}"))
